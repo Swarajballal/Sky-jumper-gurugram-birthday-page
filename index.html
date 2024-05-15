@@ -648,128 +648,137 @@
 
 
     <script type="text/javascript">
-
-                function updateImageSource() {
-                    var img = document.getElementById('banner-img');
-                    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        
-                    if (screenWidth < 600) {
-                        img.src = "https://static.wixstatic.com/media/386348_48fce270f5554d4687f4e287631943af~mv2.jpg/v1/crop/x_131,y_98,w_1495,h_1424/fill/w_640,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/banner-03.jpg";
-                    } else {
-                        img.src = "https://static.wixstatic.com/media/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg/v1/fill/w_1899,h_814,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg";
-                    }
+        function updateImageSource() {
+            try {
+                var img = document.getElementById('banner-img');
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    
+                if (screenWidth < 600) {
+                    img.src = "https://static.wixstatic.com/media/386348_48fce270f5554d4687f4e287631943af~mv2.jpg/v1/crop/x_131,y_98,w_1495,h_1424/fill/w_640,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/banner-03.jpg";
+                } else {
+                    img.src = "https://static.wixstatic.com/media/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg/v1/fill/w_1899,h_814,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg";
                 }
-     
-                updateImageSource();
-        
-                window.addEventListener('resize', updateImageSource);
-
-
-                $(document).ready(function(){
-                        $('#birthdaycelebratedslider').slick({
-                            slidesToShow: 4,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 4000,
-                            arrows: true,
-                            dots: false,
-                            pauseOnHover: true,
-                            responsive: [{
-                                breakpoint: 600,
-                                settings: {
-                                    slidesToShow: 1
-                                }
-                            }]
-                        });
-
-
-                        $('#birthdaycelebratedslider2').slick({
-                            slidesToShow: 4,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 4000,
-                            arrows: true,
-                            dots: false,
-                            pauseOnHover: true,
-                            responsive: [{
-                                breakpoint: 600,
-                                settings: {
-                                    slidesToShow: 1
-                                }
-                            }]
-                        });
-
-                function updateScreenSlider() {
+            } catch (error) {
+                console.log("Error updating image source: ", error);
+            }
+        }
+    
+        updateImageSource();
+        window.addEventListener('resize', updateImageSource);
+    
+        $(document).ready(function(){
+            try {
+                $('#birthdaycelebratedslider').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: true,
+                    dots: false,
+                    pauseOnHover: true,
+                    responsive: [{
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+                });
+            } catch (error) {
+                console.log("Error initializing birthdaycelebratedslider: ", error);
+            }
+    
+            try {
+                $('#birthdaycelebratedslider2').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: true,
+                    dots: false,
+                    pauseOnHover: true,
+                    responsive: [{
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+                });
+            } catch (error) {
+                console.log("Error initializing birthdaycelebratedslider2: ", error);
+            }
+    
+            function updateScreenSlider() {
+                try {
                     var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
-        
+    
                     if (screenWidth < 600) {
                         $('#fun_deals_cards_slider').slick({
-                           slidesToShow: 1,
-                           slidesToScroll: 1,
-                           autoplay: true,
-                           autoplaySpeed: 3000,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
                             arrows: true,
                             dots: false,
-                         pauseOnHover: true,
-                     });
-
-                     $('#whatParentsSayVideos').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: true,
-                     });
-
-                     $('#exclusivepricescards').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: true,
-                     });
-
-                     $('#birthdayPartyMenuCards').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: true,
-                     });
-
-                     $('#tiles_holder').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: true,
-                     });
-                     
-                    } else if (screenWidth >= 600 && $('#fun_deals_cards_slider').hasClass('slick-initialized') || screenWidth >= 600 && $('#whatParentsSayVideos').hasClass('slick-initialized') || screenWidth >= 600 && $('#exclusivepricescards').hasClass('slick-initialized') || screenWidth >= 600 && $('#birthdayPartyMenuCards').hasClass('slick-initialized') || screenWidth >= 600 && $('#tiles_holder').hasClass('slick-initialized')) {
-                     $('#fun_deals_cards_slider').slick('unslick');
-                     $('#whatParentsSayVideos').slick('unslick');
-                     $('#exclusivepricescards   ').slick('unslick');
-                     $('#birthdayPartyMenuCards').slick('unslick');
-                     $('#tiles_holder').slick('unslick');
+                            pauseOnHover: true,
+                        });
+    
+                        $('#whatParentsSayVideos').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: false,
+                            dots: false,
+                            pauseOnHover: true,
+                        });
+    
+                        $('#exclusivepricescards').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: false,
+                            dots: false,
+                            pauseOnHover: true,
+                        });
+    
+                        $('#birthdayPartyMenuCards').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: false,
+                            dots: false,
+                            pauseOnHover: true,
+                        });
+    
+                        $('#tiles_holder').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: false,
+                            dots: false,
+                            pauseOnHover: true,
+                        });
+    
+                    } else if (screenWidth >= 600 && ($('#fun_deals_cards_slider').hasClass('slick-initialized') || $('#whatParentsSayVideos').hasClass('slick-initialized') || $('#exclusivepricescards').hasClass('slick-initialized') || $('#birthdayPartyMenuCards').hasClass('slick-initialized') || $('#tiles_holder').hasClass('slick-initialized'))) {
+                        $('#fun_deals_cards_slider').slick('unslick');
+                        $('#whatParentsSayVideos').slick('unslick');
+                        $('#exclusivepricescards').slick('unslick');
+                        $('#birthdayPartyMenuCards').slick('unslick');
+                        $('#tiles_holder').slick('unslick');
                     }
+                } catch (error) {
+                    console.log("Error updating screen slider: ", error);
                 }
-     
-                updateScreenSlider();
-        
-                window.addEventListener('resize', updateScreenSlider);
-            
-
-            });
-
+            }
+    
+            updateScreenSlider();
+            window.addEventListener('resize', updateScreenSlider);
+        });
     </script>
+    
 
 </body>
 </html>
