@@ -15,78 +15,16 @@
 </head>
 <body>
 
-    <div class="wrapper">
-         <div class="header-wrapper">
-            <div class="container">
-                <nav>
-                    <div class="image-logo-content">
-                        <img src="assets/Asset 2.webp" alt="">
-                    </div>
-
-                    <div class="review-section">
-
-                        <div class="review-block">
-                            <div class="review-upper-block">
-                                <i class="fa-regular fa-face-smile"></i>
-                                <p>4M</p>
-                            </div>
-                            <div class="review-below-block">
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-
-                        <div class="review-block">
-                            <div class="review-upper-block">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.9</p>
-                            </div>
-                            <div class="review-below-block">
-                                <p>Google Reviews</p>
-                            </div>
-                        </div>
-
-                        <div class="review-block">
-                            <div class="review-upper-block">
-                                <i class="fa-solid fa-cake-candles"></i>
-                                <p>20K+</p>
-                            </div>
-                            <div class="review-below-block">
-                                <p>Birthday Parties</p>
-                            </div>
-                        </div>
-
-                        <div class="review-block">
-                            <div class="review-upper-block">
-                                <i class="fa-solid fa-people-group"></i>
-                                <p>119K</p>
-                            </div>
-                            <div class="review-below-block">
-                                <p>Satisfied Customers</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="social-media-collection">
-                        <ul>
-                            <li><a href="!#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="!#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="!#"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-         </div>
-
          <section class="page-banner">
-            <img src="https://static.wixstatic.com/media/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg/v1/fill/w_1899,h_814,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg" alt="">
+            <img src="" class="page-banner-img" id="banner-img" alt="">
+    
 
             <div class="container">
                 <div class="banner-content">
                     <div class="header-content">
-                        <h2>PLAN YOUR KIDS <br> BIRTHDAY <br>
-                            CELEBRATION IN <br> GURGAON!</h2>
-                            <p>Bundle Limited Time Offer <br>
+                        <h2>PLAN YOUR KIDS  BIRTHDAY 
+                            CELEBRATION IN  GURGAON!</h2>
+                            <p>Bundle Limited Time Offer 
                                 (12+ people)</p>
                     </div>      
                 </div>
@@ -99,10 +37,9 @@
                                 <input type="text" name="Name" id="Name" placeholder="Full Name" required="" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed" />
                                 <input type="email" name="Email" id="Email" placeholder="Email" required="" />
                                 <input type="tel" name="Phone Number" id="Phone Number" placeholder="Phone" required="" minlength="10" maxlength="10" />
-                                <input type="text" name="School Name" id="School Name" placeholder="School Name" required="" minlength="3" />
-                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="Date of Trip" id="Date of Trip" placeholder="Date of Trip" required="" />
-                                <input type="number" name="No. of Childrens" id="No. of Childrens" placeholder="Min 25 Children" min="25" max="300" required="" />
-                                <button type="submit" id="enquiryFormSubmitBtn">Book Now</button>
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="Birthday date" id="Birthday date" placeholder="Select a Party..." required="">
+                                <input type="number" name="No. of Childrens" id="No. of Childrens" placeholder="Min 12 Guest" min="12" max="300" required="" />
+                                <button type="submit" id="enquiryFormSubmitBtn">Get offer details</button>
                             </form>
                         </div>
                     </div>
@@ -126,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="fun_deals_cards">
+                <div class="fun_deals_cards" id="fun_deals_cards_slider">
 
                     <div>
 
@@ -206,7 +143,7 @@
                 </p>
             </div>
 
-            <div class="what_parents_say_video_cards_content">
+            <div class="what_parents_say_video_cards_content" id="whatParentsSayVideos">
 
                 <div class="what_parents_say_card">
                     <video
@@ -309,7 +246,7 @@
                     <p>Ready to throw a birthday party bash that your child will never forget? SkyJumper Gurugram offers incredible party packages at unbeatable prices.</p>
                 </div>
 
-                <div class="exclusive_prices_cards">
+                <div class="exclusive_prices_cards" id="exclusivepricescards">
 
                     <div class="exclusive_prices_block block1">
                         <img src="assets/exclusive-image-1.webp" alt="">
@@ -354,45 +291,46 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="tiles-holder-main">
-                                                        <div class="tile-card text-card jump-card">
-                                    <p>Jump</p>
-                                </div>
-                                                                                             
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_545a3a305c044b7ea292cc97054b2d39mv2.webp" alt="386348_545a3a305c044b7ea292cc97054b2d39~mv2">
-                                        </div>
-                                     
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_b6f4b496a50a4249ac3d774a82c6acd0mv2.webp" alt="386348_b6f4b496a50a4249ac3d774a82c6acd0~mv2">
-                                        </div>
-                                     
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_e5220b138d0f42da80282bd92a76b655mv2.webp" alt="386348_e5220b138d0f42da80282bd92a76b655~mv2">
-                                        </div>
-                                                                                                                    <div class="tile-card text-card party-card">
-                                    <p>Party all  day!</p>
-                                </div>
-                                                                                             
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_0d8eef4367234395911e328f621c2037mv2.webp" alt="386348_0d8eef4367234395911e328f621c2037~mv2">
-                                        </div>
-                                     
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_d6fe3c97d0204163adcf11966bde3840mv2.webp" alt="386348_d6fe3c97d0204163adcf11966bde3840~mv2">
-                                        </div>
-                                                                                                                    <div class="tile-card text-card fun-card">
-                                    <p>Fun</p>
-                                </div>
-                                                                                             
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_296d02f0cd544c789a7c5fb14c24716cmv2.webp" alt="386348_296d02f0cd544c789a7c5fb14c24716c~mv2">
-                                        </div>
-                                     
-                                        <div class="tile-card">
-                                            <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_2f3d5078f4fd41299f124cc21d9ffff8mv2.webp" alt="386348_2f3d5078f4fd41299f124cc21d9ffff8~mv2">
-                                        </div>
-                                                                                                            </div>
+                        <div class="tiles-holder-main" id="tiles_holder">
+                            <div class="tile-card text-card jump-card">
+                                <p>Jump</p>
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_545a3a305c044b7ea292cc97054b2d39mv2.webp" alt="386348_545a3a305c044b7ea292cc97054b2d39~mv2" />
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_b6f4b496a50a4249ac3d774a82c6acd0mv2.webp" alt="386348_b6f4b496a50a4249ac3d774a82c6acd0~mv2" />
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_e5220b138d0f42da80282bd92a76b655mv2.webp" alt="386348_e5220b138d0f42da80282bd92a76b655~mv2" />
+                            </div>
+
+                            <div class="tile-card text-card party-card">
+                                <p>Party all day!</p>
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_0d8eef4367234395911e328f621c2037mv2.webp" alt="386348_0d8eef4367234395911e328f621c2037~mv2" />
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_d6fe3c97d0204163adcf11966bde3840mv2.webp" alt="386348_d6fe3c97d0204163adcf11966bde3840~mv2" />
+                            </div>
+                            <div class="tile-card text-card fun-card">
+                                <p>Fun</p>
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_296d02f0cd544c789a7c5fb14c24716cmv2.webp" alt="386348_296d02f0cd544c789a7c5fb14c24716c~mv2" />
+                            </div>
+        
+                            <div class="tile-card">
+                                <img src="https://skyjumpertrampolinepark.com/wp-content/uploads/2023/12/386348_2f3d5078f4fd41299f124cc21d9ffff8mv2.webp" alt="386348_2f3d5078f4fd41299f124cc21d9ffff8~mv2" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -411,8 +349,8 @@
                         for all the birthday fun.</p>
                 </div>
 
-                <div class="birthday_party_menu_cards">
-
+                <div class="birthday_party_menu_cards" id="birthdayPartyMenuCards">
+                 <div>
                     <div class="birthday_party_menu_block first_block">
                         <img src="https://static.wixstatic.com/media/386348_fb1e1189693241f59b749dff0835aaa9~mv2.png/v1/fill/w_591,h_585,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%208.png" alt="">
                         <div class="birthday_party_menu_content">
@@ -424,7 +362,9 @@
                             </ul>
                         </div>
                     </div>
+                </div>
 
+                <div>
                     <div class="birthday_party_menu_block second_block">
                         <img src="https://static.wixstatic.com/media/386348_13fee5a4e1bc4c17b30d3329de3ae172~mv2.png/v1/fill/w_541,h_591,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%207.png" alt="">
                         <div class="birthday_party_menu_content">
@@ -436,6 +376,7 @@
                             </ul>
                         </div>
                     </div>
+                </div>    
 
                 </div>
                 
@@ -454,7 +395,9 @@
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Rose float | Carribean Float | Banana Shake | Mango Shake | Midnight Beauty | Jigar Thanda | Imli Ka Amlana | Fruit Beer | Salted Cucumber Mint lassi | Mango and Mint Mattha | Coffee | Tea | Pepsi | Fanta | Sprite | Mountain Dew
+                                        <p>
+                                            Rose float | Carribean Float | Banana Shake | Mango Shake | Midnight Beauty | Jigar Thanda | Imli Ka Amlana | Fruit Beer | Salted Cucumber Mint lassi | Mango and Mint Mattha | Coffee | Tea | Pepsi | Fanta | Sprite | Mountain Dew
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -466,9 +409,12 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
+                                       <p>
                                         <strong>Veg Menu:</strong> Basket Of Fries | Samosa chole chaat | Cocktail Samosa | Plain / Masala Maggi | Veg Momos | Chi-Chi Smilies | Chilli Garlic Potato Bites | Garlic Bread | Veg Fingers Main Course | Cheese Corn Triangles | Vada Pav | Veg Pizza Calzone | Veg spring rolls
-                                        <br>
+                                       </p>
+                                       <p>
                                         <strong>Non Veg Menu:</strong> Chicken Spring Rolls | Chicken Momos | Crispy Chicken Strips | Chicken Seekh Kebab
+                                       </p>
                                     </div>
                                 </div>
                             </div>
@@ -480,9 +426,12 @@
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>Veg Menu:</strong> Aloo Tikki Big Boy Burger | Margherita Pizza | Classic Club Grilled Sandwich | Paneer Tikka Sandwich | Garden Fresh pizza | Penne Arrabbiata | Pav Bhaji Chole Masala with Kasoori Kulche | Veg Biryani Rajma Chawa l Chole Chawal | Veg Fried Rice with Veg Manchurian
-                                        <br>
-                                        <strong>Non Veg Menu:</strong> Crispy Chicken BBQ Burger | Mumbai Style Chicken Tikka Tawa Biryani | Junglee Chicken Tikka Sandwich | Penne Alfredo | Loaded Chicken Pizza
+                                        <p>
+                                            <strong>Veg Menu:</strong> Aloo Tikki Big Boy Burger | Margherita Pizza | Classic Club Grilled Sandwich | Paneer Tikka Sandwich | Garden Fresh pizza | Penne Arrabbiata | Pav Bhaji Chole Masala with Kasoori Kulche | Veg Biryani Rajma Chawa l Chole Chawal | Veg Fried Rice with Veg Manchurian
+                                        </p>
+                                        <p>
+                                            <strong>Non Veg Menu:</strong> Crispy Chicken BBQ Burger | Mumbai Style Chicken Tikka Tawa Biryani | Junglee Chicken Tikka Sandwich | Penne Alfredo | Loaded Chicken Pizza
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -494,7 +443,7 @@
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Walnut Brownie with Vanilla Ice Cream | Molten Chocolava | Dates and Sesame
+                                        <p>Walnut Brownie with Vanilla Ice Cream | Molten Chocolava | Dates and Sesame</p>
                                     </div>
                                 </div>
                             </div>
@@ -540,7 +489,6 @@
                 <div><img src="https://static.wixstatic.com/media/386348_e4ec1c71781d4af288f425c65630301d~mv2.jpeg/v1/fit/w_458,h_306,q_90/386348_e4ec1c71781d4af288f425c65630301d~mv2.webp" alt="Image 3"></div>
                 <div><img src="https://static.wixstatic.com/media/386348_d6fe3c97d0204163adcf11966bde3840~mv2.jpeg/v1/fill/w_373,h_372,q_90/386348_d6fe3c97d0204163adcf11966bde3840~mv2.webp" alt="Image 4"></div>
                 <div><img src="https://static.wixstatic.com/media/386348_b714b80e962b4999bea049b607cb75c3~mv2.jpeg/v1/fit/w_407,h_306,q_90/386348_b714b80e962b4999bea049b607cb75c3~mv2.webp" alt="Image 5"></div>
-                <div><img src="https://static.wixstatic.com/media/386348_af7e9f428b7949b885afdcb4d8a67d7cf000.jpg/v1/fill/w_320,h_496,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/386348_af7e9f428b7949b885afdcb4d8a67d7cf000.jpg" alt="Image 7"></div>
                 <div><img src="https://static.wixstatic.com/media/386348_a83011dbf4fb44adb0ec586c6c227b76~mv2.jpeg/v1/crop/x_255,y_185,w_779,h_775/fill/w_353,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-07-28%20at%2013_36_29.jpeg" alt="Image 8"></div>
                 <div><img src="https://static.wixstatic.com/media/386348_a8b1817fb2324b7484670354a8e88a5a~mv2.jpeg/v1/fit/w_458,h_306,q_90/386348_a8b1817fb2324b7484670354a8e88a5a~mv2.webp" alt="Image 9"></div>
                 <div><img src="https://static.wixstatic.com/media/386348_9677d829ee274828b7622ce4f982a4dd~mv2.jpeg/v1/fit/w_459,h_306,q_90/386348_9677d829ee274828b7622ce4f982a4dd~mv2.webp" alt="Image 10"></div>
@@ -549,7 +497,149 @@
             </div>
         </section>
 
-    </div>
+
+        <section class="contact-faq-section faq contact-faq-new-section" style="background-image: url('https://static.wixstatic.com/media/386348_cbb3d68a848148d480ba213d31328e0a~mv2.jpg/v1/fill/w_1903,h_890,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_cbb3d68a848148d480ba213d31328e0a~mv2.jpg');">
+            <div class="container">
+                <h3>FAQ</h3>
+                <div class="faq-lists">
+                    <div class="faq-articles">
+                            <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-1">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-1">
+                                      <h2>How’s the party organised?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>SkyJumper assigns a designated party host to your birthday party who will ensure everything runs smoothly. We've got it all covered, from creating the invite video to setting up a special birthday party space equipped for a food buffet and cake ceremony.</p>
+                                  </div>
+                            </article>
+                                              <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-2">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-2">
+                                      <h2>Is there any time limit?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>You can choose between 2 and 3 hours of total activity time. 45 minutes are set aside for food and cake cutting; the rest is activity time.</p>
+                                  </div>
+                            </article>
+                                              <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-3">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-3">
+                                      <h2>Booking time?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>We recommend scheduling 15 days in advance, subject to availability.</p>
+                                  </div>
+                            </article>
+                                              <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-4">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-4">
+                                      <h2>Cancellation?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>No cancellation.</p>
+                                  </div>
+                            </article>
+                                              <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-5">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-5">
+                                      <h2>Where and how can i book my event?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>You can book your event online, in person, or over the phone.</p>
+                                  </div>
+                            </article>                        <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-6">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-6">
+                                      <h2>What’s required to confirm my event?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>A deposit is required to secure your event.</p>
+                                  </div>
+                            </article>
+                                              <article class="faq-accordion">
+                                  <input type="checkbox" class="tgg-title" id="tgg-title-7">
+                                  <div class="faq-accordion-title">
+                                    <label for="tgg-title-7">
+                                      <h2>What’s the minimum and maximum guest count allowed for events?</h2>
+                                      <span class="arrow-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="faq-accordion-content">
+                                    <p>We ask for a minimum of 10 guests to book an event and can accommodate upwards of 300 guests when you rent out the park exclusively!</p>
+                                  </div>
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="spot-us-section">
+            <h3>SPOT US</h3>
+            <div class="spot-location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1777400.032725881!2d75.61074205579853!3d29.531383393484543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce745580f64ad%3A0xfe77495b0b340bf5!2sSkyJumper%20Trampoline%20Park%20Gurgaon!5e0!3m2!1sen!2sin!4v1700458927985!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <section class="contact-us-section">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <div class="contact-description-block">
+            <p>Want to see your child's face light up with joy on their next birthday? <br>
+        
+                SkyJumper Gurugram is the perfect place to create lasting memories! Contact us today to
+                learn more about our options, or check out our website for a detailed breakdown of each
+                kids birthday party package.</p>
+            <br>
+            <p>We guarantee a fun-filled and hassle-free celebration that fits your budget!
+        
+            </p>
+        
+            </div>
+            <div class="contact-address-block">
+            <address>
+                Ground Floor, ILD Trade Center, Sohna Road, Sector-47, Gurugram,<br>
+                HR - 122018
+            </address>
+            <p>Email: <a
+                        href="mailto:enquiry_ggn@skyjumpertp.com">enquiry_ggn@skyjumpertp.com</a>
+                | Phone: <a href="tel: +91-888 2288 001"> +91-888 2288 001</a> </p>
+            <a href="#bookform" class="btn btn-book">Book Now</a>
+            </div>
+        </div>
+        </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -558,51 +648,128 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function(){
-                $('#birthdaycelebratedslider').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                    arrows: true,
-                    dots: false,
-                    pauseOnHover: true,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
+
+                function updateImageSource() {
+                    var img = document.getElementById('banner-img');
+                    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        
+                    if (screenWidth < 600) {
+                        img.src = "https://static.wixstatic.com/media/386348_48fce270f5554d4687f4e287631943af~mv2.jpg/v1/crop/x_131,y_98,w_1495,h_1424/fill/w_640,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/banner-03.jpg";
+                    } else {
+                        img.src = "https://static.wixstatic.com/media/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg/v1/fill/w_1899,h_814,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_098c54e1aef44d2db96251c1a27d65b4~mv2.jpg";
+                    }
+                }
+     
+                updateImageSource();
+        
+                window.addEventListener('resize', updateImageSource);
 
 
-                $('#birthdaycelebratedslider2').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                    arrows: true,
-                    dots: false,
-                    pauseOnHover: true,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
+                $(document).ready(function(){
+                        $('#birthdaycelebratedslider').slick({
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            arrows: true,
+                            dots: false,
+                            pauseOnHover: true,
+                            responsive: [{
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1
+                                }
+                            }]
+                        });
+
+
+                        $('#birthdaycelebratedslider2').slick({
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            arrows: true,
+                            dots: false,
+                            pauseOnHover: true,
+                            responsive: [{
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1
+                                }
+                            }]
+                        });
+
+                function updateScreenSlider() {
+                    var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        
+                    if (screenWidth < 600) {
+                        $('#fun_deals_cards_slider').slick({
+                           slidesToShow: 1,
+                           slidesToScroll: 1,
+                           autoplay: true,
+                           autoplaySpeed: 3000,
+                            arrows: true,
+                            dots: false,
+                         pauseOnHover: true,
+                     });
+
+                     $('#whatParentsSayVideos').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: true,
+                     });
+
+                     $('#exclusivepricescards').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: true,
+                     });
+
+                     $('#birthdayPartyMenuCards').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: true,
+                     });
+
+                     $('#tiles_holder').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: true,
+                     });
+                     
+                    } else if (screenWidth >= 600 && $('#fun_deals_cards_slider').hasClass('slick-initialized') || screenWidth >= 600 && $('#whatParentsSayVideos').hasClass('slick-initialized') || screenWidth >= 600 && $('#exclusivepricescards').hasClass('slick-initialized') || screenWidth >= 600 && $('#birthdayPartyMenuCards').hasClass('slick-initialized') || screenWidth >= 600 && $('#tiles_holder').hasClass('slick-initialized')) {
+                     $('#fun_deals_cards_slider').slick('unslick');
+                     $('#whatParentsSayVideos').slick('unslick');
+                     $('#exclusivepricescards   ').slick('unslick');
+                     $('#birthdayPartyMenuCards').slick('unslick');
+                     $('#tiles_holder').slick('unslick');
+                    }
+                }
+     
+                updateScreenSlider();
+        
+                window.addEventListener('resize', updateScreenSlider);
+            
+
             });
 
     </script>
+
 </body>
 </html>

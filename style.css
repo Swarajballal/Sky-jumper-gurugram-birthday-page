@@ -11,15 +11,6 @@ body {
     font-style: normal;
   }
 
-.wrapper {
-    height: 100vh;
-    background-color: #f1f1f1;
-}
-
-.wrapper .header-wrapper {
-    background-color: #3F49AC;
-}
-
 .container {
     max-width: 1250px;
     /* background-color: lightblue; */
@@ -97,30 +88,32 @@ body {
 }
 
 .page-banner .banner-content {
-    width: max-content;
-    position: absolute;
-    top: 8%;
-    left: 25%;
+    width: fit-content;
+    position: absolute; 
+    top: 10%;
+    left: 20%;
     text-align: center;
 }
 
 .banner-content .header-content h2 {
     color: #FFDD3F;
     margin-bottom: 16px;
-    font-size: 38px !important;
+    font-size: 44px !important;
+    width: 50%;
 }
 
 .banner-content .header-content p {
     color: #fff;
-    font-size: 18px !important;
-    font-weight: bold !important
+    font-size: 24px !important;
+    font-weight: bold !important;
+    width: 50%;
 }
 
 
 .trip-banner-caption {
     position: absolute;
-    bottom: 15%;
-    left: 68%;
+    top: 30%;
+    left: 70%;
     width: 25%;
    }
    
@@ -213,6 +206,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    overflow-x: hidden; 
    }
 
    .fun_deals_section::before {
@@ -256,10 +250,10 @@ body {
 }
 
 .fun_deals_cards {
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding: 0 40px;
     align-items: center;
     position: relative;
 }
@@ -444,6 +438,9 @@ body {
 .exclusive-price-section .exclusive_prices_cards .exclusive_prices_block .exclusive_special_block {
     position: absolute;
     font-size: 27px;
+}
+.exclusive-price-section .exclusive_prices_cards .exclusive_prices_block .exclusive_special_block h3 {
+    font-weight: bold;
 }
 
 .block1 .exclusive_price {
@@ -646,15 +643,25 @@ body {
     text-align: center;
 }
 
+.default_menu_section .accordion-header button {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
 
-.accordion-button {
+.default_menu_section .accordion-body p {
+    text-align: left;
+    font-size: 16px;
+    padding:  0 20px;
+}
+.default_menu_section .accordion-button {
     background-color: #F18422;
     color: white !important;
     border: none; 
     box-shadow: none;
 }
 
-.accordion-item {
+.default_menu_section .accordion-item {
     background-color: #F18422;
     color: white;
     border: none; 
@@ -662,24 +669,24 @@ body {
     border-bottom: 1px solid white;
 }
 
-.accordion-button::after {
+.default_menu_section .accordion-button::after {
 
     color: white !important;
 }
 
-.accordion-button:not(.collapsed) {
+.default_menu_section.accordion-button:not(.collapsed) {
     background-color: #F18422;
     color: white;
 }
 
-.accordion-body {
+.default_menu_section .accordion-body {
     background-color: #F18422;
     color: white;
     padding: 15px;
     border: none;
 }
 
-.accordion-header {
+.default_menu_section .accordion-header {
     background-color: #F18422;
     padding: 18px !important; 
     font-weight: bold !important;
@@ -765,25 +772,573 @@ body {
     font-size: 60px; 
 }
 
+.contact-faq-new-section {
+    position: relative;
+    background-image: url('https://static.wixstatic.com/media/386348_cbb3d68a848148d480ba213d31328e0a~mv2.jpg/v1/fill/w_1903,h_890,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/386348_cbb3d68a848148d480ba213d31328e0a~mv2.jpg');
+  }
+  
+  .contact-faq-new-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    z-index: 1;
+  }
+   .contact-faq-new-section .container{
+       position: relative;
+     z-index: 2; /* Ensures content is visible above the overlay */
+   }
+    
+    
+    section.spot-us-section{
+      padding-top:25px;
+      margin-top:-1px;
+      background: #ffffff !important;
+    }
+     section.spot-us-section h3{
+       text-align: center;
+       color: #000;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 45px;
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      margin-bottom: 25px;
+      line-height: 1.1;
+     }
+    
+    .contact-us-section{
+      background: #ffffff;
+      padding: 40px 0;
+    }
+  .contact-us-section h3{
+      text-align: center;
+      font-weight: 600;
+        color: #000;
+        
+  }
+  
+  .contact-us-section .contact-address-block * {
+      color: #000;
+  }
+  .contact-us-section .contact-description-block p{
+        font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      color: #000;
+  }
+  .contact-us-section .contact-address-block address {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      line-height: 1.4;
+  }
+  
+  .contact-us-section .contact-address-block {
+      text-align: center;
+  }
+  
+  .contact-us-section .contact-address-block p {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px !important;
+      line-height: 1.4;
+  }
+  
+  .contact-us-section .contact-address-block p a {
+      text-decoration: none;
+  }
+  
+  .contact-us-section .contact-address-block a.btn {
+      background: #ffdd23;
+      color: #000;
+      font-size: 14px;
+      min-width: 130px;
+      border-radius: 20px;
+      padding: 10px 28px;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 25px;
+  }
+  .contact-us-section .contact-description-block{
+      margin: 30px 100px;
+  }
+  .contact-us-section .contact-description-block p{
+      text-align: center;
+  }
 
+  @media only screen and (max-width: 600px) {
 
-
-@media only screen and (max-width: 600px) {
-    .fun_deals_cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-        align-items: center;
-        position: relative;
+    .container {
+        width: 100%;
+        /* background-color: lightblue; */
     }
 
-    .what_parents_say_video_cards_content {
-        /* background-color: aqua; */
+    /* page banner */
+    .page-banner {
+        background-color: #761ACA;
+    }
+
+    .page-banner .banner-content {
+        width: 100%;
+        position: absolute; 
+        top: 2%;
+        left: 0;
+        text-align: center;
+    }
+
+    .banner-content .header-content {
+        /* background-color: yellow; */
+        z-index: 999;
+    }    
+
+    .banner-content ::before {
+        content: "";
+        background: #ffffff11;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner-content .header-content h2 {
+        width: 100%;
+        margin: 0 auto;
+        font-weight: bolder;
+        color: #FFDD3F;
+        margin-bottom: 18px;
+        font-size: 20px !important;
+    }
+    
+    .banner-content .header-content p {
+        width: 50%;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px !important;
+        font-weight: bold !important
+    }
+
+    .page-banner .trip-banner-caption {
+        background-color: #761ACA;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+       }
+
+    .form-section {
+         padding: 30px;
+    }
+    
+    .form-section h6 {
+        font-size: 20px !important;
+    } 
+
+    .form-block form input {
+        margin: 6px auto;
+        border-radius: 6px;
+        padding: 4px 15px;
+        width: 100%;
+        font-size: 14px;
+        color: #0b2f5b;
+        background-color: #fff;
+        border: 2px solid red;
+        height: 40px;
+    }
+
+    .form-block form button {
+        background-color: rgb(255, 221, 63);
+        color: #3f49ac;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 8px 25px !important;
+        border-radius: 8px;
+        display: inline-block;
+        width: 100%;
+        height: 38px;
+        margin-top: 8px;
+    }
+    .form-section h6 {
+        color: #fff;
+        font-size: 17px;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+ 
+    .kitty-banner-section.backbgbox .container,
+    section.kitty-banner-section.backbgbox .container > .row {
+        height: 100%;
+    }
+    .kitty-banner-section.backbgbox .container > .row {
+        align-items: center;
+    }
+    form#kittyForm button {
+        background: #ec623c;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .trip-banner-caption h2 {
+        color: #fedd3f;
+        font-weight: 500;
+    }
+    .kitty-banner-section {
+        position: relative;
+    }
+    .kitty-banner-section::before {
+        content: "";
+        background: #3f49ac4f;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .kitty-banner-section .container {
+        position: relative;
+    }
+    .trip-banner-caption h1 span {
+        font-weight: 500;
+        color: #f0852d;
+    }
+     .trip-banner-caption h1 {
+        font-size: 34px;
+        color: #fff;
+        margin-bottom: 15px;
+        line-height: 1.1;
+    }
+    .trip-banner-caption h2 {
+        font-size: 22px;
+    }
+    .corporate-slider-arrow {
+        margin-top: 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fun_deals_section .fun_deals_content .header-content h2{
+        padding:  0 10px !important;
+        font-size: 24px !important;
+        font-weight: 700;
+    }
+
+    .fun_deals_section .fun_deals_content .description-content p{
+        text-align: center;
+        padding:  0 30px;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+    }
+
+    /* exclusive prices */
+    .exclusive-price-section .exclusive_prices_cards {
+        /* background-color: #f0852d; */
+        width: 100%;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap: 10px;
+        gap: 30px;
     }
+
+    /* birthday */
+    .birthday_party_menu_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* what parents say card */
+    .what_parents_say .container .header-content h2 {
+        /* background-color: red; */
+        padding:  30px 10px;
+        font-size: 24px !important;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+    
+    .what_parents_say .description-content p {
+        color: #fff;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        text-align: center;
+        font-weight: bold;
+        padding: 0 30px;
+    }
+    
+    .what_parents_say_video_cards_content video {
+        width: 100%;
+        max-height: auto;
+        object-fit: cover;
+    }
+
+    .what_parents_say_card_content .card_icon {
+        position: absolute;
+        top: 69%;
+        left: 40%;
+    }
+
+    /* exclusive-price-section */
+    .exclusive-price-section  .container .header-content h2{
+        /* background-color: red; */
+        padding:  30px 10px;
+        text-align: center;
+        color: #000;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+    }
+    
+    .exclusive-price-section  .description-content p{
+        color: #000;
+        padding:  0px 10px;
+        font-size: 18px !important;
+        text-align: center;
+        width: 100%;
+        font-weight: 700 !important;
+    }
+    
+    .exclusive-price-section .exclusive_prices_cards {
+        /* background-color: #f0852d; */
+        padding: 0px 40px 20px 40px;
+    }
+
+    .exclusive-price-section .exclusive_prices_cards .exclusive_prices_block .exclusive_price p {
+        font-size: 16px !important;
+        font-weight: bolder;
+    }
+    
+    .exclusive-price-section .exclusive_prices_cards .exclusive_prices_block .exclusive_special_block h3 {
+        font-size: 20px !important; 
+        font-weight: bold; 
+    }
+    
+    .block1 .exclusive_price {
+        top: 35%;
+        left: 20%;
+        color: #fff;
+    }
+    
+    .block1  .exclusive_special_block {
+        top: 70%;
+        left: 35%;
+        color: #fff;
+    }
+    
+    .block2 .exclusive_price {
+        top: 40%;
+        left: 26%;
+        color: #fff;
+    }
+    
+    .block2  .exclusive_special_block {
+        top: 68%;
+        left: 38%;
+        color: red;
+    }
+    
+    .block3 .exclusive_price {
+        top: 35%;
+        left: 12%;
+        color: #fff;
+    }
+    
+    .block3  .exclusive_special_block {
+        top: 70%;
+        left: 35%;
+        color: #fff;
+    }
+
+    .tile-card p {
+        padding: 80px;
+    }
+
+    /* birthday party menu section */
+
+    .birthday_party_menu_cards {
+        display: block;
+        width: 100%;
+    }
+
+    .birthday_party_menu_cards {
+        /* background-color: red; */
+        padding: 0px;
+    }
+    
+    .birthday_party_menu_block {
+        /* background-color: green; */
+        height: 100%;
+        position: relative;
+    }
+    
+    .birthday_party_menu_cards .first_block {
+        transform: rotate(0deg);
+    }
+    
+    .birthday_party_menu_cards .second_block {
+        transform: rotate(0deg);
+    }
+    
+    .birthday_party_menu_cards .first_block img {
+        width: 100%;
+    }
+    
+    .birthday_party_menu_cards .second_block img {
+        width: 100%;
+    }
+
+    .birthday_party_menu_block .birthday_party_menu_content {
+        position: absolute;
+        top: 65%;
+        left: 6%;
+    }
+
+    .birthday_party_menu_content ul {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .birthday_party_menu_section .header-content h2{
+        padding: 30px 10px;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        text-align: center;
+        color: #000;
+    }
+    
+    .birthday_party_menu_section .description-content p{
+        color: #000;
+        font-size: 18px !important;
+        text-align: center;
+        line-height: 1.5;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 30px;
+        font-weight: bold !important;
+    }
+
+    .default_menu_section {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .default_menu_section .default_menu_header_content p{
+        font-size: 19px !important;
+        font-weight: bold !important;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .deafult_menu_items_content {
+        background-color: #F18422;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .default_menu_options img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Birthday parties celebrated section  */
+    
+    .birthday_celebrated_slider img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; 
+    }
+    
+    .birthday_party_celebrated_section .header-content h2{
+        padding: 30px 10px;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        text-align: center;
+        color: #000;
+    }
+
+    .birthday_party_celebrated_section .description-content p{
+        color: #000;
+        font-size: 18px !important;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.5;
+        width: 100%;
+        margin-bottom: 40px;
+        font-weight: bold !important;
+    }
+
+    .tiles-holder-main div {
+        height: 300px;
+    }
+
+    .tiles-holder-main {
+        padding: 30px;
+    }
+
+
+    /* slick slider arrows code */
+
+    .birthday_celebrated_slider .slick-arrow{
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        }
+    
+    
+    .birthday_celebrated_slider .slick-prev {
+        left: 5px; 
+        z-index: 9999;
+    }
+    
+    .birthday_celebrated_slider .slick-next {
+        right: 40px; 
+    }
+    
+    .birthday_celebrated_slider .slick-prev:before {
+        font-size: 60px; 
+    }
+    
+    .birthday_celebrated_slider .slick-next:before {
+        font-size: 60px; 
+    }
+    
+    .default_menu_options .slick-arrow{
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        }
+    
+    
+    .default_menu_options .slick-prev {
+        left: 15px; 
+        z-index: 9999;
+    }
+    
+    .default_menu_options .slick-next {
+        right: 35px; 
+    }
+    
+    .default_menu_options .slick-prev:before {
+        font-size: 60px; 
+    }
+    
+    .default_menu_options .slick-next:before {
+        font-size: 60px; 
+    }
+
+    .what_parents_say_card {
+        position: relative;
+        padding: 50px 30px;
+    }
+    
     
   }
